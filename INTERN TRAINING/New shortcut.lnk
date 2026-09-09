@@ -1,0 +1,77 @@
+# 🏆 Day 1: Setup & Git Fundamentals
+
+Congratulations on completing your Day 1 training! You've successfully set up your environment from scratch and learned how to version control your code. 
+
+Here is a quick reference guide to everything we accomplished today so you can review it whenever you need!
+
+---
+
+## 🛠️ 1. Environment Setup
+We prepared your Windows machine for Ruby development and version control:
+- **Ruby & DevKit:** Installed natively using the official RubyInstaller. This gave you access to the `ruby` command to run scripts.
+- **Git:** Installed the Git version control system to track changes in your code.
+- **GitHub CLI (`gh`):** Installed the official GitHub command-line tool, which allowed us to securely authenticate your account and create repositories directly from the terminal without messing with SSH keys or manual website clicks.
+
+---
+
+## 💻 2. Your First Ruby Script
+We created a simple Ruby script (`hello.rb`) to verify the installation:
+
+```ruby
+puts "Hello from Ruby!"
+puts "Current time is: #{Time.now}"
+puts "This is a test"
+```
+**How to run it:**
+```bash
+ruby hello.rb
+```
+
+---
+
+## 🐙 3. The Core Git Workflow
+This is the most important part of your training today. Every time you make changes to your code, you will use this exact 4-step workflow to save it to your GitHub account.
+
+> [!TIP]
+> **Always make sure you are in your project folder (e.g., `cd C:\ruby`) before running these!**
+
+### Step 1: Check your status
+See what files you have changed, added, or deleted.
+```bash
+git status
+```
+*(Red files are changed but not ready to save. Green files are ready to save).*
+
+### Step 2: Stage your changes
+Tell Git which files you want to include in your next save. 
+```bash
+# Add a specific file
+git add hello.rb
+
+# Add ALL changed files in the folder (the period means "everything")
+git add . 
+```
+
+### Step 3: Commit your changes
+Take a "snapshot" of your staged files and attach a descriptive message so you know what you changed.
+```bash
+git commit -m "Your descriptive message here"
+```
+
+### Step 4: Push to GitHub
+Upload your saved snapshot to your online GitHub repository.
+```bash
+git push
+```
+
+---
+
+## ✅ Deliverable Completed
+You successfully completed the Day 1 deliverable:
+- [x] Initialized a local Git repository
+- [x] Created an initial Ruby script (`hello.rb`)
+- [x] Created a `README.md` file
+- [x] Created a remote repository on GitHub named `rubytest`
+- [x] Pushed all local code to the GitHub repository
+
+**View your live repository here:** [https://github.com/tohAdam/rubytest](https://github.com/tohAdam/rubytest)
